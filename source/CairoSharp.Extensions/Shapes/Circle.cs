@@ -24,7 +24,7 @@ namespace CairoSharp.Extensions.Shapes
         /// <param name="context">The <see cref="Context" /></param>
         /// <param name="x">The x-coordinate of the center.</param>
         /// <param name="y">The y-coordinate of the center.</param>
-        protected override void MakePath(Context context, double x, double y)
+        protected internal override void MakePath(Context context, double x, double y)
         {
             // Translate to center:
             context.Save();

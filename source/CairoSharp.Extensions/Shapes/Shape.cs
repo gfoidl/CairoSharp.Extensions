@@ -67,6 +67,6 @@ namespace CairoSharp.Extensions.Shapes
         /// <param name="context">The <see cref="Context" /></param>
         /// <param name="x">The x-coordinate of the center.</param>
         /// <param name="y">The y-coordinate of the center.</param>
-        protected abstract void MakePath(Context context, double x, double y);
+        protected internal abstract void MakePath(Context context, double x, double y);
     }
 }
