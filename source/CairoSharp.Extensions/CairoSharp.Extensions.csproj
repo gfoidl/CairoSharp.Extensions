@@ -4,6 +4,17 @@
         <TargetFramework>netstandard2.0</TargetFramework>
     </PropertyGroup>
 
+    <PropertyGroup Label="Package information">
+        <PackageId>CairoSharp.Extensions</PackageId>
+        <Description>Provides some common extensions like drawing shapes for CairoSharp</Description>
+        <PackageProjectUrl>https://github.com/gfoidl/CairoSharp.Extensions</PackageProjectUrl>
+        <PackageLicenseUrl>https://github.com/gfoidl/CairoSharp.Extensions/blob/master/LICENSE</PackageLicenseUrl>
+        <PackageIconUrl>http://cairographics.org/cairo-banner.png</PackageIconUrl>
+        <RepositoryUrl>https://github.com/gfoidl/CairoSharp.Extensions</RepositoryUrl>
+        <RepositoryType>git</RepositoryType>
+        <PackageTags>cairo graphics svg png vector-graphics vector</PackageTags>
+    </PropertyGroup>
+
     <!--<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">-->
     <PropertyGroup>
         <DocumentationFile>bin\Release\netstandard2.0\CairoSharp.Extensions.xml</DocumentationFile>
