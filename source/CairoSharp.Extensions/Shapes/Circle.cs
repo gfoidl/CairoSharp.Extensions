@@ -30,9 +30,8 @@ namespace CairoSharp.Extensions.Shapes
             context.Save();
             context.Translate(x, y);
             {
-#warning Check if this issue still is true
                 // instead of radius the diameter was used by cairo
-                context.Arc(0, 0, _radius / 2, 0, 2 * Math.PI);
+                context.Arc(0, 0, _radius, 0, 2 * Math.PI);
             }
             context.Restore();
         }
