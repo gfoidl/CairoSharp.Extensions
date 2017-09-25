@@ -15,7 +15,7 @@ namespace CairoSharp.Extensions.Arrows
         /// <remarks>
         /// The absolut value is used, no exception is thrown on negative values.
         /// </remarks>
-        public CircleArrow(double radius) : base(radius, 2 * Math.PI) { }
+        public CircleArrow(double radius = 0.5) : base(radius, 2 * Math.PI) { }
         //---------------------------------------------------------------------
         /// <summary>
         /// Draws the arrow head.
