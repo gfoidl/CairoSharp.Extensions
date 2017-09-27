@@ -5,3 +5,21 @@
 # CairoSharp.Extensions
 
 Provides some common extensions like drawing shapes for [CairoSharp](https://github.com/gfoidl/CairoSharp)
+
+## Shapes
+
+* Shape (abstract)
+* Circle
+* Square
+* Hexagon
+
+## Arrows
+
+* Arrow
+* Vector (arrow head on one side only)
+* circle arrow head
+* open arrow head
+
+## KnownColors
+
+![](known_colors.svg)

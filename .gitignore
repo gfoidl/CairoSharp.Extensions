@@ -229,3 +229,4 @@ _Pvt_Extensions
 /demos/gfoidl.DataCompression.Demos.LiveData/data/*
 /source/CreateKnownColors/KnownColors.cs
 /demos/CairoSharp.Extensions.Demos/output
+/demos/CairoSharp.Extensions.KnownColorMap/known_colors.svg
