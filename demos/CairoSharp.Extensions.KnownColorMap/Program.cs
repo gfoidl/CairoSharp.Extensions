@@ -44,7 +44,7 @@ namespace CairoSharp.Extensions.KnownColorMap
                     context.Stroke();
 
                     string name      = colors[i].Name;
-                    double textWidth = GetTextWidth(context, name);
+                    double textWidth = context.GetTextWidth(name);
 
                     context.Color = colors[i].Color.GetInverseColor();
                     context.MoveTo((surfaceWidth - textWidth) / 2, y + context.FontExtents.Height);
@@ -64,20 +64,6 @@ namespace CairoSharp.Extensions.KnownColorMap
                 Color color = (Color)field.GetValue(null);
                 yield return (color, field.Name);
             }
-        }
-        //---------------------------------------------------------------------
-        private static double GetTextWidth(Context context, string name)
-        {
-            double textWidth = 0;
-
-            for (int i = 0; i < name.Length; ++i)
-            {
-                string s       = name.Substring(i, 1);
-                TextExtents te = context.TextExtents(s);
-                textWidth += te.XAdvance;
-            }
-
-            return textWidth;
         }
     }
 }

@@ -173,13 +173,7 @@ namespace CairoSharp.Extensions.Demos
                     //string text = "III";
 
                     // Determine the width of the text
-                    double textWidth = 0;
-                    for (int i = 0; i < text.Length; i++)
-                    {
-                        string str = text.Substring(i, 1);
-                        TextExtents te = c.TextExtents(str);
-                        textWidth += te.XAdvance;
-                    }
+                    double textWidth = c.GetTextWidth(text);
 
                     c.Save();
                     c.Translate((300 - textWidth) / 2, 16);

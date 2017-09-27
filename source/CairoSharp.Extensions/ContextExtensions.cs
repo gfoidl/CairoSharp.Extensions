@@ -1,4 +1,5 @@
-﻿using Cairo;
+﻿using System;
+using Cairo;
 using CairoSharp.Extensions.Shapes;
 
 namespace CairoSharp.Extensions
@@ -45,6 +46,28 @@ namespace CairoSharp.Extensions
         {
             var hexagon = new Hexagon(cellSize);
             hexagon.MakePath(context, x, y);
+        }
+        //---------------------------------------------------------------------
+        /// <summary>
+        /// Gets the width of the given text with the selected font.
+        /// </summary>
+        /// <param name="context">The <see cref="Context" /></param>
+        /// <param name="text">The string.</param>
+        /// <returns>The width of the text.</returns>
+        public static double GetTextWidth(this Context context, string text)
+        {
+            if (text == null) throw new ArgumentNullException(nameof(text));
+
+            double textWidth = 0;
+
+            for (int i = 0; i < text.Length; ++i)
+            {
+                string s       = text.Substring(i, 1);
+                TextExtents te = context.TextExtents(s);
+                textWidth += te.XAdvance;
+            }
+
+            return textWidth;
         }
     }
 }
