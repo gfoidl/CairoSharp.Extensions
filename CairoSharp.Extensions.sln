@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26730.15
+VisualStudioVersion = 15.0.27004.2005
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{637F5C36-970A-46AF-9E5A-092944A15B29}"
 	ProjectSection(SolutionItems) = preProject
@@ -30,7 +30,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "demos", "demos", "{B2CEA35C
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CairoSharp.Extensions.Demos", "demos\CairoSharp.Extensions.Demos\CairoSharp.Extensions.Demos.csproj", "{EB13F83A-9CB8-4307-9CD7-1CB55F5BBFB2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CairoSharp.Extensions.KnownColorMap", "demos\CairoSharp.Extensions.KnownColorMap\CairoSharp.Extensions.KnownColorMap.csproj", "{F6A51719-AB3D-4F7C-9CE0-91448B5D50E4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CairoSharp.Extensions.KnownColorMap", "demos\CairoSharp.Extensions.KnownColorMap\CairoSharp.Extensions.KnownColorMap.csproj", "{F6A51719-AB3D-4F7C-9CE0-91448B5D50E4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".circleci", ".circleci", "{346AE79B-33D7-476F-B8B3-3E266A0CC168}"
+	ProjectSection(SolutionItems) = preProject
+		.circleci\config.yml = .circleci\config.yml
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +68,7 @@ Global
 		{7C0DE8A4-82FC-42EC-8037-857F660B9F8E} = {4BE6CE51-A756-46C0-AE09-BA40277376D3}
 		{EB13F83A-9CB8-4307-9CD7-1CB55F5BBFB2} = {B2CEA35C-F1BE-4E05-9F37-283D7E4E07A2}
 		{F6A51719-AB3D-4F7C-9CE0-91448B5D50E4} = {B2CEA35C-F1BE-4E05-9F37-283D7E4E07A2}
+		{346AE79B-33D7-476F-B8B3-3E266A0CC168} = {9FD89909-4295-4C9D-AE00-6F9B6EB10776}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {49378F69-8486-4E9F-8110-06B59CDB73E2}
